@@ -144,3 +144,69 @@
 //     }
 //     return contador;
 // }
+
+// #12 Multiplicar arreglo
+
+// const multiplicarArreglo = (numbers) => {
+//     let result = 1;
+//     for (let i =0; i < numbers.length; i++){
+//         result *= numbers[i];
+//     }
+//     return result;
+// }
+
+// #13 Remover ceros
+
+// const removerCeros = (numbers) => {
+//     let result = [];
+//     for (let i = 0; i < numbers.length; i++){
+//         if (numbers[i] != 0){
+//             result.push(numbers[i]);
+//         }
+//     }
+//     return result;
+// }
+
+// #14 Sumar arreglo entre el rango 
+
+// const sumarArreglo = (numbers, inicial, final) => {
+//     let result = 0;
+//     if (inicial === 0 && final === 0) {
+//         return 0;
+//     }
+    
+//     for (let i = inicial; i <= final; i++){
+//         result += numbers[i];
+//     }
+//     return result;
+// }
+
+// #15 Transcribir ADN a ARN
+
+// const transcribir = (adn) => {
+//     let complemento = "";
+//     for (let i = 0; i < adn.length; i++){
+//         let base = adn[i];
+//         if (base === "G") {
+//             complemento += "C";
+//         } else if (base === "C"){
+//             complemento += "G"
+//         } else if (base === "T"){
+//             complemento += "A"
+//         } else if (base === "A"){
+//             complemento += "U"
+//         }
+//     }
+
+//     return complemento;
+// }
+
+// #16 Capitalizar palabra
+
+const capitalizar = (str) => {
+    return str.length > 0 ? str[0].toUpperCase() + str.slice(1): str;
+}
+
+console.log(capitalizar("pedro")) // "Pedro"
+console.log(capitalizar("hola mundo")) // "Hola mundo"
+console.log(capitalizar("")) // ""
