@@ -73,19 +73,74 @@
 
 // #6 FizzBuzz
 
-const fizzBuzz = (numero) => {
-    if(numero % 3 === 0 && numero % 5 === 0){
-        return "fizzbuzz"
-    } else if (numero % 3 === 0){
-        return "fizz"
-    } else if (numero % 5 === 0){
-        return "buzz"
-    } else {
-        return numero
-    }
+// const fizzBuzz = (numero) => {
+//     if(numero % 3 === 0 && numero % 5 === 0){
+//         return "fizzbuzz"
+//     } else if (numero % 3 === 0){
+//         return "fizz"
+//     } else if (numero % 5 === 0){
+//         return "buzz"
+//     } else {
+//         return numero
+//     }
 
-};
+// };
+
+// #7 Contar rango de números
+
+// const contarRango = (num1,num2) => {
+//     let contador = 0;
+//     for (let i = num1 + 1; i < num2; i++){
+//         contador++;
+//     }
+//     return contador;
+// }
+
+// #8 Sumar rango de números 
+
+// const sumarRango = (numinicial,numfinal) => {
+//     if (numinicial === numfinal){
+//         return 0;
+//     }
+//     let suma = 0;
+//     for (let i = numinicial; i <= numfinal; i++){
+//         suma += i;
+//     }
+//     return suma;
+// }
+
+// #9 Número de aes (letra "a")
 
 
+// const numeroDeAes = (str) => {
+// let contador = 0;
+//     for (let i = 0; i < str.length; i++) {
+//         if (str[i].toLowerCase() === "a"){
+//             contador++;
+//         }
+//     }
+//     return contador;
+// }
 
-   
+// #10 Número de caracteres 
+
+// const numeroDeCaracteres = (str,caracter) => {
+//     let contador = 0;
+//     for (let i = 0; i < str.length; i++){
+//         if (str[i] === caracter){
+//             contador++;
+//         }
+//     }
+//     return contador;
+// }   
+
+
+// 11# Sumar arreglo
+
+// const sumarArreglo = (numeros) => {
+//     let contador = 0;
+//     for (let i = 0; i < numeros.length; i++){
+//         contador += numeros[i];
+//     }
+//     return contador;
+// }
