@@ -203,10 +203,89 @@
 
 // #16 Capitalizar palabra
 
-const capitalizar = (str) => {
-    return str.length > 0 ? str[0].toUpperCase() + str.slice(1): str;
-}
+// const capitalizar = (str) => {
+//     return str.length > 0 ? str[0].toUpperCase() + str.slice(1): str;
+// }
 
-console.log(capitalizar("pedro")) // "Pedro"
-console.log(capitalizar("hola mundo")) // "Hola mundo"
-console.log(capitalizar("")) // ""
+// #17 Capitalizar cada palabra
+
+    // const capitalizar = (str) => {
+    //     const palabras = str.split(' ');
+    //     const palabrasCapitalizadas = palabras.map((palabra) => {
+    //         return palabra.length > 0 ? palabra[0].toUpperCase() + palabra.slice(1): ' ';
+    //     });
+
+    //     const resultado = palabrasCapitalizadas.join(' ');
+    //     return resultado;
+    // }
+
+    // #18 Encontrar el número máximo
+
+    // Solucion 1
+    // const max = (numbers) => {
+    //     const result = Math.max(...numbers);
+    //     return result;
+    // }
+    
+    // Solucion 2
+    // const max = (numbers) => {
+    //     if (numbers.lenght === 0){
+    //         return "No numbers"
+    //     }
+    //     let maxValor = numbers[0];
+    //     for (let i = 0; i < numbers.lenght; i++){
+    //         if (numbers[i] > maxValor) {
+    //             maxValor = numbers[i];
+    //         }
+    //     }
+    //     return maxValor;
+    // }
+
+    // #19 Encontrar el número mínimo 
+
+    // Solucion 1
+    // const min = (numbers) => {
+    //     let result = Math.min(...numbers);
+    //     return result
+    // }
+
+    // Solucion 2
+    // const min = (numbers) => {
+    //     if (numbers === 0){
+    //         return "No numbers";
+    //     }
+    //     let minValor = numbers[0];
+    //     for (let i = 0; i < numbers.length; i++){
+    //         if (numbers[i] < minValor) {
+    //             minValor = numbers[i]
+    //         }
+    //     }
+    //     return minValor;
+    // }
+
+    // #20 Generar contraseña
+
+    const password = (str) => {
+        let result = "";
+    
+        for (let i = 0; i < str.length; i++) {
+            if (str[i] === " ") {
+                continue;
+            } else if (str[i] === str[i].toUpperCase()) {
+                result += str[i].toLowerCase();
+            } else if (str[i] === "a") {
+                result += "4";
+            } else if (str[i] === "e") {
+                result += "3";
+            } else if (str[i] === "i"){
+                result += "1";
+            } else if (str[i] === "o")
+            result += "0"
+        }
+    
+        return result;
+    }
+
+    console.log(password("hola")) // "h0l4"
+console.log(password("esta es una prueba")) // "3st43sun4pru3b4"
+console.log(password("")) // ""
